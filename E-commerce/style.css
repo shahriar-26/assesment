@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Home section */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #f8f9fa;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  height: 50px;
+  width: 100%;
+}
+
+
+
+
+.carousel-item {
+  height: 700px;
+  /* এখানে height কম–বেশি করো */
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+  /* image stretch হবে না */
+}
+
+.seller-img {
+  height: 220px;
+  /* এখানে image height control হবে */
+  width: 100%;
+  object-fit: cover;
+  /* image crop হবে, বাকা হবে না */
+}
+
+.product-img {
+  height: 220px;
+  /* এখানে image height control হবে */
+  width: 100%;
+  object-fit: cover;
+  /* image crop হবে, বাকা হবে না */
+}
+
+/* Product Page */
+.inner-banner .container {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.inner-banner .container p a {
+  text-decoration: none;
+}
+
+.gallery-image {
+   height: 200px;
+  /* এখানে image height control হবে */
+  width: 100%;
+  object-fit: cover;
+  /* image crop হবে, বাকা হবে না */
+}
+
+/* Singup Page */
+.singup{
+  display: flex;
+  gap: 20px;   /* দুইটার মাঝে ফাঁকা */
+}
+
+.form-group {
+  width: 50%;
+}
+.img-zoom{
+  transition: 1s ease;
+}
+.img-zoom:hover{
+  transform: scale(1.5);
+}

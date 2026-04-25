@@ -1,0 +1,302 @@
+<!-- ================== HOMEPAGE FULL (index.html) ================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Development Company</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-bar py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <!-- Left Side -->
+            <div>
+                <a href="#" class="text-white ms-2 text-decoration-none mailto"> info@sdc.com |<i
+                        class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="text-white ms-2 text-decoration-none bi-telephone-fill "> Phone: 0123456789 |</a>
+                <a href="#" class="text-white ms-2 text-decoration-none">Login</a> /
+                <a href="#" class="text-white text-decoration-none">Register</a>
+            </div>
+
+            <!-- Right Side -->
+            <div>
+                <a href="#" class="text-white me-2 text-decoration-none "><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white me-2 text-decoration-none"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="text-white me-2 text-decoration-none "><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none me-3">
+
+                <h5 class="text-danger align-items-center mb-2 mb-lg-0">SDC</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project-detail.html">Project-details</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+
+                <button type="button" class="btn btn-danger ">Login</button>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 🔹 Breadcrumb -->
+    <div class="bg-light p-3">
+        <div class="container">
+            <h4>Services</h4>
+            <p><a href="index.html">Home</a> / Contact</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+
+        <div class="row g-5">
+            <div class="col-lg-6">
+
+                <section class="py-5 bg-light">
+                    <div class="container">
+
+
+                        <div class="text-center mb-5">
+                            <h2 class="fw-bold">Contact Us</h2>
+
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+
+                                <form id="contactForm">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="name" placeholder="Your Full Name"
+                                            required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email <span
+                                                class="text-danger">*</span></label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="you@example.com" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="subject" class="form-label">Subject <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject"
+                                            required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message <span
+                                                class="text-danger">*</span></label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message"
+                                            required></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </form>
+
+
+                                <div class="alert mt-3 d-none" id="formAlert"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal fade" id="successModal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content text-center p-4">
+                                <h4 class="text-success">Message Sent!</h4>
+                                <p>Thank you for contacting us. We will get back to you soon.</p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <div class="col-lg-6">
+                <section class="py-5 bg-light">
+                    <div class="container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.327847965732!2d90.3674927752677!3d23.806938186603603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c143f3c5cb41%3A0x96cc2b8d847ada3e!2sEuropean%20IT%20Institute!5e0!3m2!1sen!2sbd!4v1775630794560!5m2!1sen!2sbd"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Contact Information</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-md-4 text-center">
+                    <div class="p-4 shadow-sm rounded bg-light h-100">
+                        <i class="fas fa-map-marker-alt fa-2x mb-3 text-primary"></i>
+                        <h5 class="fw-bold">Our Office</h5>
+                        <p>123 Tech Avenue, Suite 500<br>San Francisco, CA 94107, USA</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 text-center">
+                    <div class="p-4 shadow-sm rounded bg-light h-100">
+                        <i class="fas fa-phone fa-2x mb-3 text-success"></i>
+                        <h5 class="fw-bold">Call Us</h5>
+                        <p>+1 (415) 123-4567<br>Mon – Fri, 9am – 6pm</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 text-center">
+                    <div class="p-4 shadow-sm rounded bg-light h-100">
+                        <i class="fas fa-envelope fa-2x mb-3 text-danger"></i>
+                        <h5 class="fw-bold">Email Us</h5>
+                        <p>contact@yoursoftwareco.com</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.327847965732!2d90.3674927752677!3d23.806938186603603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c143f3c5cb41%3A0x96cc2b8d847ada3e!2sEuropean%20IT%20Institute!5e0!3m2!1sen!2sbd!4v1775630794560!5m2!1sen!2sbd"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    -->
+    <!-- Big Footer -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">MyCompany</h5>
+                    <p>
+                        We provide high-quality services and solutions to help your business grow.
+                        Your success is our priority.
+                    </p>
+                </div>
+
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Quick Links</h5>
+                    <p><a href="#" class="text-light text-decoration-none">Home</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">About</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">Services</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">Contact</a></p>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Newsletter</h5>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-warning" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <p>Stay updated with our latest news</p>
+                </div>
+
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Follow Us</h5>
+
+                    <a href="#" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Footer -->
+    <div class="footer text-white text-center p-2">
+
+        copyright@2026 Software Development Company. All rights reserved.
+        <p id="datetime"></p>
+    </div>
+
+    <script>
+        function showDateTime() {
+            let now = new Date();
+
+            let date = now.toLocaleDateString();
+            let time = now.toLocaleTimeString();
+
+            document.getElementById("datetime").innerHTML =
+                "Current Date: " + date + "Current Time:" + time;
+        }
+        setInterval(showDateTime, 1000);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

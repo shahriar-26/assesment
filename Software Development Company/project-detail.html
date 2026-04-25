@@ -1,0 +1,300 @@
+<!-- ================== HOMEPAGE FULL (index.html) ================== -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Development Company</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Top Section -->
+    <div class="top-bar py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <!-- Left Side -->
+            <div>
+                <a href="#" class="text-white ms-2 text-decoration-none mailto"> info@sdc.com |<i
+                        class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="text-white ms-2 text-decoration-none bi-telephone-fill "> Phone: 0123456789 |</a>
+                <a href="#" class="text-white ms-2 text-decoration-none">Login</a> /
+                <a href="#" class="text-white text-decoration-none">Register</a>
+            </div>
+
+            <!-- Right Side -->
+            <div>
+                <a href="#" class="text-white me-2 text-decoration-none "><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="text-white me-2 text-decoration-none"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="text-white me-2 text-decoration-none "><i class="fa-brands fa-youtube"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--  Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none me-3">
+
+                <h5 class="text-danger align-items-center mb-2 mb-lg-0">SDC</h5>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="project-detail.html">Project-details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+
+                <button type="button" class="btn btn-danger ">Login</button>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 🔹 Breadcrumb -->
+    <div class="bg-light p-3">
+        <div class="container">
+            <h4>Services</h4>
+            <p><a href="index.html">Home</a> / <a href="projects.html">Projects</a> / Project-details</p>
+        </div>
+    </div>
+
+    <!-- Project Categories -->
+    <section>
+        <div class="container py-5">
+            <div class="row g-5">
+
+                <!-- LEFT: Image Gallery -->
+                <div class="col-lg-6">
+
+                    <!-- Main Image -->
+                    <div class="zoom-box mb-3">
+                        <img id="mainImage" src="images/e.jpg" width="550" img-fluid Project Image">
+                    </div>
+
+                    <!-- Thumbnails -->
+                    <div class="d-flex gap-2 thumb">
+                        <img src="images/m,jpg.jfif" width="85" height="100" onclick="changeImage(this)">
+                        <img src="images/e.jpg" width="85" onclick="changeImage(this)">
+                        <img src="images/ai.jpg" width="85" onclick="changeImage(this)">
+                        <img src="images/health.jpg" width="85" onclick="changeImage(this)">
+                        <img src="images/image1.jpg" width="85" onclick="changeImage(this)">
+                        <img src="images/p2.jpg" width="85" onclick="changeImage(this)">
+
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: Project Information -->
+                <div class="col-lg-6">
+
+                    <h2 class="mb-3">E-Commerce Web Application</h2>
+
+                    <p class="text-muted mb-2"><strong>Client:</strong> XYZ Software Solutions</p>
+
+                    <p>
+                        This project is a scalable e-commerce platform built for high performance and seamless user
+                        experience.
+                        It includes advanced features like real-time inventory management, secure checkout, user
+                        dashboards,
+                        and analytics reporting.
+                    </p>
+
+                    <!-- Technologies -->
+                    <h5 class="mt-4">Technologies Used:</h5>
+                    <div>
+                        <span class="badge bg-primary">React.js</span>
+                        <span class="badge bg-success">Node.js</span>
+                        <span class="badge bg-dark">MongoDB</span>
+                        <span class="badge bg-warning text-dark">Stripe API</span>
+                        <span class="badge bg-info text-dark">REST API</span>
+                    </div>
+
+                    <!-- Extra Info -->
+                    <ul class="list-group list-group-flush mt-4">
+                        <li class="list-group-item"><strong>Category:</strong> Web Development</li>
+                        <li class="list-group-item"><strong>Duration:</strong> 3 Months</li>
+                        <li class="list-group-item"><strong>Project Type:</strong> Full Stack</li>
+                    </ul>
+
+                    <!-- Buttons -->
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-primary">Live Demo</a>
+                        <a href="#" class="btn btn-outline-secondary">Case Study</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- iv. Related Projects -->
+    <section>
+        <div class="container py-5">
+            <div class="mt-5">
+                <h3 class="mb-4">Related Projects</h3>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card shadow-sm h-100">
+                            <img src="images/m,jpg.jfif" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Mobile Banking App</h5>
+                                <p class="card-text small">Secure fintech solution with real-time transactions.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card shadow-sm h-100">
+                            <img src="images/ai.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">AI Chatbot System</h5>
+                                <p class="card-text small">Automated customer support using NLP.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card shadow-sm h-100">
+                            <img src="images/p2.jpg" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">CRM Dashboard</h5>
+                                <p class="card-text small">Customer management system with analytics.</p>
+                                <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Image Zoom Modal -->
+            <div class="modal fade" id="imageModal">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body text-center">
+                            <img id="modalImg" src="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Big Footer -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container text-md-left">
+            <div class="row text-md-left">
+
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">MyCompany</h5>
+                    <p>
+                        We provide high-quality services and solutions to help your business grow.
+                        Your success is our priority.
+                    </p>
+                </div>
+
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Quick Links</h5>
+                    <p><a href="#" class="text-light text-decoration-none">Home</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">About</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">Services</a></p>
+                    <p><a href="#" class="text-light text-decoration-none">Contact</a></p>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Newsletter</h5>
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                            <button class="btn btn-warning" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                    <p>Stay updated with our latest news</p>
+                </div>
+
+
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 fw-bold text-warning">Follow Us</h5>
+
+                    <a href="#" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="btn btn-outline-light btn-floating m-1">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Footer -->
+    <div class="footer text-white text-center p-2">
+
+        copyright@2026 Software Development Company. All rights reserved.
+        <p id="datetime"></p>
+    </div>
+
+    <script>
+        function showDateTime() {
+            let now = new Date();
+
+            let date = now.toLocaleDateString();
+            let time = now.toLocaleTimeString();
+
+            document.getElementById("datetime").innerHTML =
+                "Current Date: " + date + "Current Time:" + time;
+        }
+        setInterval(showDateTime, 1000);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
